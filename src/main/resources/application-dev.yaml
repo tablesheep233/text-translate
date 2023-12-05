@@ -1,0 +1,5 @@
+translate:
+  type: NiuTrans
+  niuTrans:
+    # your_niutrans_key
+    key:

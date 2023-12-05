@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: text-translate
+  profiles:
+    active: ${PROFILE_ACTIVE:dev}
+    group:
+      dev:
+        - dev
