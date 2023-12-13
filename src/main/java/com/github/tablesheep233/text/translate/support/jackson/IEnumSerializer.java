@@ -17,7 +17,7 @@ public class IEnumSerializer extends JsonSerializer<IEnum<?, ?>> {
 
     @Override
     public void serialize(IEnum value, JsonGenerator gen, SerializerProvider serializers) throws IOException {
-        gen.writeString(value.toString());
+        gen.writeString(value.name());
         gen.writeStringField(gen.getOutputContext().getCurrentName() + "Name", value.getMessage());
     }
 }

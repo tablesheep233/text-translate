@@ -32,7 +32,7 @@ public class TranslateProperties {
         /**
          * Niu trans translate type.
          */
-        NiuTrans
+        NIU_TRANS
     }
 
     /**

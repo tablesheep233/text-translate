@@ -30,11 +30,14 @@ public class NiutransTextTranslateService implements TextTranslateService {
     private static final String NIU_IN = "id";
     private static final String NIU_IW = "he";
 
-    private static final Map<LanguageEnum, String> NIU_LANGUAGE_MAP = new HashMap<>() {{
-        put(LanguageEnum.ZH_HANT, NIU_ZH_HANT);
-        put(LanguageEnum.IN, NIU_IN);
-        put(LanguageEnum.IW, NIU_IW);
-    }};
+    private static final Map<LanguageEnum, String> NIU_LANGUAGE_MAP;
+
+    static {
+        NIU_LANGUAGE_MAP = new HashMap<>();
+        NIU_LANGUAGE_MAP.put(LanguageEnum.ZH_HANT, NIU_ZH_HANT);
+        NIU_LANGUAGE_MAP.put(LanguageEnum.IN, NIU_IN);
+        NIU_LANGUAGE_MAP.put(LanguageEnum.IW, NIU_IW);
+    }
 
     private final TranslateProperties translateProperties;
 

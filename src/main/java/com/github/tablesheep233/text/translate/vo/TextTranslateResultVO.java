@@ -1,8 +1,6 @@
 package com.github.tablesheep233.text.translate.vo;
 
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.github.tablesheep233.text.translate.constant.LanguageEnum;
-import com.github.tablesheep233.text.translate.support.jackson.IEnumSerializer;
 import lombok.Data;
 
 import java.io.Serializable;
